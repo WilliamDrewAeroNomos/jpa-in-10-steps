@@ -1,16 +1,25 @@
 /**
  * 
  */
-package entity;
+package com.in28minutes.learning.jpa.jpain10steps.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 /**
  * @author <a href=mailto:support@aeronomos.org>aeronomos</a>
  * 
  *         Please document me!!
  */
+//Table - User
+@Entity(name="User")
 public class User {
 
+	@Id
+	@GeneratedValue
 	private long id;
+	
 	private String name;
 	private String role;
 
